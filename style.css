@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0d0f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 900;
+    display: flex;
+    font-size: 20px;
+    background-color: rgb(224, 209, 245);
+    padding: 23px;
+    align-items: center;
+}
+
+nav li a {
+    text-decoration: none;
+    color: blueviolet;
+    transition: color 500ms;
+}
+
+nav li a:hover {
+    color: rgb(2, 3, 18);
+}
+
+nav .logo {
+    margin-right: auto;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+    margin: 0 23px;
+}
+
+.container {
+    min-height: 80vh;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_heading {
+    margin: 25px 0;
+    color: blueviolet;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container form input[type="number"], 
+.container form select {
+    font-size: 25px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-color: navy;
+    text-align: center;
+}
+
+.btn {
+    width: 144px;
+    padding: 5px 8px;
+    font-size: 20px;
+    background: #b68cea;
+    color: black;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+.output {
+    display: none;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.output table {
+    width: 80%; 
+    max-width: 800px;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin: auto;
+}
+
+.output table th {
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.output table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.output table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.output table tr:hover {
+    background-color: #ddd;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+        background-color: rgb(209, 196, 172);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container form input[type="number"],
+    .container form select {
+        margin: 10px 0;
+    }
+    .output table {
+        width: 90vw;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: lightsteelblue;
+}

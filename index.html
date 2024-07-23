@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">MyCurrencyConverter</a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="container_heading">CONVERT YOUR CURRENCY</h1>
+        <form id="converter-form">
+            <input type="number" name="quantity" placeholder="Enter Amount" required />
+            <select name="currency" required>
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </form>
+        <button class="btn" type="button">Submit</button>
+    </div>
+
+    <div class="output">
+        <table>
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Code</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <footer>Copyright &copy; MyCurrencyConverter, All rights reserved</footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
